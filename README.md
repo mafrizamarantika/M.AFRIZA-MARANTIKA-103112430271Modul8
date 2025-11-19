@@ -118,8 +118,6 @@ int main() {
 ```
 > Output
 > 
-> ![Screenshot bagian x]()
-Program diatas adalah program implementasi struktur data queue berbasis array dengan kapasitas maksimal lima elemen. Program ini menggunakan variabel head dan tail untuk melacak posisi awal dan akhir antrian, yang awalnya bernilai -1 sebagai tanda bahwa antrian kosong. Operasi enqueue menambahkan elemen di bagian belakang antrian jika belum penuh, sementara operasi dequeue menghapus elemen paling depan; jika hanya tersisa satu elemen, antrian dikosongkan, sedangkan jika lebih, elemen-elemen di geser ke kiri agar tetap berurutan. Program juga menyediakan fungsi untuk memeriksa apakah antrian kosong atau penuh, serta untuk menampilkan isi antrian. Di bagian main, program mendemonstrasikan proses penambahan, penghapusan, dan penampilan isi queue secara berurutan.
 
 ## UNGUIDED
 
@@ -244,7 +242,7 @@ void showQueue(const Queue &Q);
 ```
 > Output soal 1
 > 
-> ![Screenshot bagian x]()
+> ![Screenshot bagian x](ssunguided1modul8.png)
 
 Program tersebut membuat struktur antrian (queue) menggunakan array, di mana data masuk lewat belakang menggunakan fungsi enqueue dan keluar lewat depan menggunakan dequeue, dengan head menunjukkan posisi awal antrian dan tail menunjukkan posisi akhir, sehingga data diproses berdasarkan prinsip First In, First Out (FIFO) layaknya orang sedang mengantri.
 
@@ -320,7 +318,7 @@ void showQueue(const Queue &Q){
 
 > Output soal 2
 > 
-> ![Screenshot bagian x]()
+> ![Screenshot bagian x](ssunguided2.modul8.png)
 
 Program ini membuat struktur queue sederhana menggunakan array. Queue dimulai kosong karena initQueue memberi nilai -1 pada front dan rear. Lalu program menyediakan cara mengecek apakah queue kosong (isEmpty) atau penuh (isFull). Ketika data dimasukkan lewat push, posisi rear digeser ke kanan dan nilai baru ditambahkan; jika sebelumnya kosong, front ikut di-set ke 0. Saat menghapus data dengan pop, program mengambil nilai dari front dan menggeser front satu langkah, atau mengosongkan queue jika datanya tinggal satu. Fungsi showQueue menampilkan posisi front–rear serta isi antrian. Program ini bekerja seperti antrian biasa: masuk dari belakang, keluar dari depan.
 
@@ -402,6 +400,6 @@ void printInfo(const Queue &Q){
 
 > Output soal 3
 > 
-> ![Screenshot bagian x]()
+> ![Screenshot bagian x](ssunguided3.modul8.png)
 Program ini membuat circular queue, yaitu antrian yang indeksnya berputar. Front dan rear bernilai -1 saat queue kosong, bertambah melingkar saat enqueue, dan maju saat dequeue. Jika front dan rear kembali sama setelah penghapusan, queue jadi kosong lagi. PrintInfo menampilkan posisi front–rear dan seluruh isi antrian dengan cara berputar. Program ini bekerja seperti antrian biasa tetapi memanfaatkan array supaya bisa berputar.
 ## Referensi
